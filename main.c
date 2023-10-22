@@ -4,13 +4,22 @@
 int main()
 {
     int mynum;
-    printf("Hello world!\n");
-    printf("Enter a number:\n");
+    int mynum1;
+    printf("Enter first number: \n");
     scanf("%d",&mynum);
-    if (mynum%2==0){
-        printf("even");
-    }else{
-    printf("odd");
-    }
+    printf("Enter second number: \n");
+    scanf("%d",&mynum1);
+    if (mynum>5 && mynum1>5){
+        printf("%d",mynum+mynum1);
+    }else if ((mynum<5&&mynum1>5)||(mynum>5&&mynum1<5)){
+    printf("%d",mynum1*mynum);
+      }else if (mynum<5 && mynum1<5){
+      printf("%d",mynum+1);
+       printf("%d",mynum1+1);
+      } else{
+      printf("hello world");
+      }
+
+
     return 0;
 }
