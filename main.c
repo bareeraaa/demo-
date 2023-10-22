@@ -3,23 +3,15 @@
 
 int main()
 {
-    int mynum;
-    int mynum1;
-    printf("Enter first number: \n");
-    scanf("%d",&mynum);
-    printf("Enter second number: \n");
-    scanf("%d",&mynum1);
-    if (mynum>5 && mynum1>5){
-        printf("%d",mynum+mynum1);
-    }else if ((mynum<5&&mynum1>5)||(mynum>5&&mynum1<5)){
-    printf("%d",mynum1*mynum);
-      }else if (mynum<5 && mynum1<5){
-      printf("%d",mynum+1);
-       printf("%d",mynum1+1);
-      } else{
-      printf("hello world");
-      }
-
-
-    return 0;
+   int employeeid;
+   float hoursworked,hourlyrate;
+   printf("enter employee id:\n");
+   scanf("%d",&employeeid);
+   printf("enter hours worked:\n");
+   scanf("%f",&hoursworked);
+   printf("enter hourly rate:\n");
+   scanf("%f",&hourlyrate);
+   printf("Employee id:%d\n",employeeid);
+   printf("salary of the month:%.2f\n",hoursworked*hourlyrate);
+   return 0;
 }
