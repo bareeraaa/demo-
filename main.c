@@ -1,17 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-   int employeeid;
-   float hoursworked,hourlyrate;
-   printf("enter employee id:\n");
-   scanf("%d",&employeeid);
-   printf("enter hours worked:\n");
-   scanf("%f",&hoursworked);
-   printf("enter hourly rate:\n");
-   scanf("%f",&hourlyrate);
-   printf("Employee id:%d\n",employeeid);
-   printf("salary of the month:%.2f\n",hoursworked*hourlyrate);
-   return 0;
+int main() {
+    int num;
+    printf("Enter a decimal number: ");
+    scanf("%d", &num);
+    printf("Binary representation: ");
+    decimalToBinary(num);
+    printf("\n");
+    return 0;
+}
+
+void decimalToBinary(int num) {
+    if (num > 0) {
+        decimalToBinary(num / 2);
+        printf("%d", num % 2);
+    }
+    return 0;
 }
